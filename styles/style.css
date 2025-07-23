@@ -13,7 +13,7 @@
 header {
   margin-top: 50px;
 }
-.logo {
+.brand {
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -51,8 +51,8 @@ header {
 
 /* banner section */
 
-.banner{
-    margin-top: 35px;
+.banner {
+  margin-top: 35px;
 }
 .banner-description {
   margin-bottom: 16px;
@@ -89,4 +89,62 @@ header {
 }
 .banner-img img {
   padding-top: 25px;
+}
+
+/* logos section */
+.logos {
+  max-width: 1110px;
+  margin: auto;
+  margin-top: 50px;
+  /* padding: 100px; */
+}
+.logos-container {
+  max-width: 987px;
+  margin: 0 auto;
+  padding: 15px;
+  gap: 61px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.logos hr {
+  background-image: linear-gradient(#c0ccda10, #c0ccda50, #c0ccda);
+  border: none;
+  height: 1.5px;
+}
+/* .logo{
+   margin-right: 61px;
+    align-items: center;
+} */
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 0px auto; */
+  }
+  .logos-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* .nav-links,.icons{
+    visibility: hidden;
+  } */
+  .logos hr {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    text-align: center;
+    /* margin: 0 auto; */
+  }
+  .banner-title {
+    font-size: 1.75rem;
+  }
 }
