@@ -1,5 +1,6 @@
 * {
   font-family: "Poppins", sans-serif;
+  /* box-sizing: border-box; */
 }
 .display-flex {
   display: flex;
@@ -95,7 +96,7 @@ header {
 .logos {
   max-width: 1110px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 60px;
   /* padding: 100px; */
 }
 .logos-container {
@@ -117,6 +118,100 @@ header {
     align-items: center;
 } */
 
+/* card section */
+.card-heading{
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.card{
+  /* max-width: 329px; */
+  /* height: 476px; */
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  border-radius: 5px;
+  /* margin: auto; */
+  /* box-shadow: 1px 2px 20px ; */
+  /* overflow: hidden; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: start; */
+}
+.card-image{
+  text-align: center;
+  /* display: flex;
+  align-items: center; */
+  margin-top: 15px;
+  border-radius: 5px;
+  /* width: 100%; */
+  /* padding: 10px; */
+}
+
+.card-body{
+  /* margin-left: 15px; */
+  /* border: 2px solid ; */
+  padding: 0px 15px;
+  /* border: 2px solid; */
+}
+.card-title{
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #18191F;
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+.card-price{
+  font-size: 1.5rem;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #00000087;
+}
+.card-description{
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #787885;
+}
+.rating{
+ font-size: 12px;
+  /* margin-right: 1px; */
+  color: #FB8200;
+}
+.card-rating span{
+  padding: 0px 5px;
+  /* margin: 0px 5px; */
+  /* border: 2px solid; */
+  color: #5E6366;
+  font-size: 0.875rem;
+  font-weight: 700;
+  /* gap: 10px; */
+  /* align-items: center; */
+}
+.more-option{
+  color: #E02C6D;
+  font-size: 700;
+  font-weight: 1rem;
+  align-items: center;
+  gap: 8px;
+  justify-content: end;
+}
+
+.card-section{
+max-width: 1047px;  
+  margin: auto;
+}
+.all-card{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  gap: 30px;
+}
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
@@ -147,4 +242,19 @@ header {
   .banner-title {
     font-size: 1.75rem;
   }
+  .all-card{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0px;
+  }
+  /* .card-section{
+    margin: 0px;
+  } */
+  .card-image{
+    padding: 0 15px;
+  }
+ .more-option{
+  justify-content: center;
+ }
 }
+
